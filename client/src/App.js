@@ -1,24 +1,36 @@
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FormPage from './components/FormPage';
+
 
 function App() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+
+    async function callApi() {
+      const res = await fetch('/api');
+      console.log(res);
+      const data = await res.json();
+      console.log(data)
+      setData(data)
+    };
+      callApi();
+  },[]);
+
+
+  async function handleSubmit(e) {
+      e.preventDefault();
+      const res = await fetch('/api/test', {
+        method: 'POST',
+      })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>Hiya</p>
+    </>
   );
 }
 
