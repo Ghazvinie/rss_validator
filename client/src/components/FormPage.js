@@ -22,17 +22,63 @@ function FormPage() {
 
 
     return (
-        <div className='form-container'>
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <input
-                    type='text' 
-                    value={textInput}
-                    onChange={(e) => handleChange(e)}/>
-                <button>Submit</button>
-          </form>
+        <div className='form-table-container'>
 
-        </div>
-    );
+            <div className='form-container'>
+                <form onSubmit={(e) => handleSubmit(e)}>
+                    <input
+                        type='text'
+                        value={textInput}
+                        onChange={(e) => handleChange(e)} />
+                    <button>Submit</button>
+                </form>
+            </div>
+
+
+            <div className="table">
+            <table class="demo">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test1</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test 2</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test 3</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test 4</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test 5</td>
+                    </tr>
+                    <tr>
+                        <td><span class="dot"></span></td>
+                        <td>Test 6</td>
+                    </tr>
+                    </tbody>
+                    </table>
+
+            </div>
+
+            </div>
+
+
+
+
+                );
 }
 
-export default FormPage;
+                export default FormPage;
