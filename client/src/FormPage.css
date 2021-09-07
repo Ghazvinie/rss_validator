@@ -9,6 +9,9 @@
     align-items: center;
     display: flex;
 }
+h1 {
+    color: #007aff;
+}
 
 button {
     margin: 4px;
@@ -17,6 +20,8 @@ button {
     padding: 5px;
     border-radius: 10%;
     cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
 }
 
 input {
@@ -40,6 +45,7 @@ th {
     border-bottom: solid;
     border-width: 1px;
     text-align: center;
+    border-color: rgba(59, 59, 59, 0.329);
 }
 
 .dotTd {
@@ -48,6 +54,9 @@ th {
 
 td {
     padding: 8px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgba(59, 59, 59, 0.329);
 }
 
 .dot {
