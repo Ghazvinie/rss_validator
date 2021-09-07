@@ -3,6 +3,10 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const xmlParser = require('express-xml-bodyparser');
+const https = require('https')
+const parseString = require('xml2js').parseString;
+
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -19,6 +23,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json()) // To parse the incoming requests with JSON payloads
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -39,5 +45,25 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+// https.get('https://feeds.bbci.co.uk/news/rss.xml', res => {
+//   console.log(res)
+//   let data = [];
+//   res.on('data', chunk => {
+//     data.push(chunk);
+//   });
+
+//   res.on('end', () => {
+//     console.log('Response ended: ');
+//     const xml = Buffer.concat(data).toString();
+//     parseString(xml, (err, result) => {
+//       console.dir(JSON.stringify(result))
+//     })
+
+//   });
+// }).on('error', err => {
+//   console.log('Error: ', err.message);
+// });
 
 module.exports = app;

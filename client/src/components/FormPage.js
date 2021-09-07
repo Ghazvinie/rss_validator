@@ -10,6 +10,12 @@ function FormPage() {
         e.preventDefault();
         const res = await fetch('/api', {
             method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                url: textInput
+            })
         });
         const data = await res.json();
         setData(data);
@@ -23,6 +29,7 @@ function FormPage() {
 
     return (
         <div className='form-table-container'>
+            {data}
 
             <div className='form-container'>
                 <form onSubmit={(e) => handleSubmit(e)}>
@@ -34,46 +41,42 @@ function FormPage() {
                 </form>
             </div>
 
-                <table class="demo">
-                    <thead>
-                        <tr>
-                            <th>Status</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className='dotTd'><span class="dot"></span></td>
-                            <td>First we check if something’s at the URL, and that it takes a reasonable amount of time to retrieve.</td>
-                        </tr>
-                        <tr>
-                            <td className='dotTd'><span className="dot"></span></td>
-                            <td>Test 2</td>
-                        </tr>
-                        <tr>
-                            <td className='dotTd'><span className="dot"></span></td>
-                            <td>Test 3</td>
-                        </tr>
-                        <tr>
-                            <td className='dotTd'><span className="dot"></span></td>
-                            <td>Test 4</td>
-                        </tr>
-                        <tr>
-                            <td className='dotTd'><span className="dot"></span></td>
-                            <td>Test 5</td>
-                        </tr>
-                        <tr>
-                            <td className='dotTd'><span className="dot"></span></td>
-                            <td>Test 6</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table className="demo">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>First we check if something’s at the URL, and that it takes a reasonable amount of time to retrieve.</td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>Test 2</td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>Test 3</td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>Test 4</td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>Test 5</td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>Test 6</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
-
-
-
-
     );
 }
 
