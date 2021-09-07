@@ -15,11 +15,14 @@ function App() {
 
   return (
     <>
-    <main>
-      <h1>SpeechKit RSS Validator</h1>
-      <h2>Check if your feed is valid:</h2>
-    <FormPage />
-    </main>
+      <main>
+
+          <h1>SpeechKit RSS Validator</h1>
+          <h2>Check if your feed is valid:</h2>
+          <FormPage />
+
+
+      </main>
     </>
   );
 }

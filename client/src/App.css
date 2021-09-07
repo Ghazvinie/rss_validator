@@ -1,9 +1,9 @@
 main {
-  width: 100%;
-  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgba(59, 59, 59, 0.055);
   color: rgba(59, 59, 59, 0.900);
+  margin: 20px;
 }

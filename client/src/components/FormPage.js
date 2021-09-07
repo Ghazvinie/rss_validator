@@ -34,51 +34,47 @@ function FormPage() {
                 </form>
             </div>
 
-
-            <div className="table">
-            <table class="demo">
-                <thead>
-                    <tr>
-                        <th>Status</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test1</td>
-                    </tr>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test 2</td>
-                    </tr>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test 3</td>
-                    </tr>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test 4</td>
-                    </tr>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test 5</td>
-                    </tr>
-                    <tr>
-                        <td><span class="dot"></span></td>
-                        <td>Test 6</td>
-                    </tr>
+                <table class="demo">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>First we check if something’s at the URL, and that it takes a reasonable amount of time to retrieve.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Test 2</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Test 3</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Test 4</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Test 5</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot"></span></td>
+                            <td>Test 6</td>
+                        </tr>
                     </tbody>
-                    </table>
+                </table>
 
-            </div>
-
-            </div>
+        </div>
 
 
 
 
-                );
+    );
 }
 
-                export default FormPage;
+export default FormPage;
