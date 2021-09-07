@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const https = require('https')
+const axios = require('axios');
+const parseString = require('xml2js').parseString;
 
 router.get('/', (req, res) => {
     res.json('api working')
@@ -7,26 +8,24 @@ router.get('/', (req, res) => {
 
 router.post('/',(req, res) => {
    const {url} = req.body;
-console.log(url)
 
-   https.get('url', res => {
-  console.log(res)
-  let data = [];
-  res.on('data', chunk => {
-    data.push(chunk);
-  });
 
-  res.on('end', () => {
-    console.log('Response ended: ');
-    const xml = Buffer.concat(data).toString();
-    parseString(xml, (err, result) => {
-      console.dir(JSON.stringify(result))
-    })
+const getData = async (url) => {
+    try {
+      const response = await axios.get(url)
+      const data = response.data;
+      console.log(data.documentElement)
+      parseString(data, (err, result) => {
+              console.dir(result.rss.channel[0].item)
+            })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  
+  getData(url)
+  
 
-  });
-}).on('error', err => {
-  console.log('Error: ', err.message);
-});
 })
 
 
