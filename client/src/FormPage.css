@@ -3,38 +3,57 @@
     padding: 10px;
 }
 
-.form-container{
+.form-container {
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 button {
     margin: 4px;
+    border: none;
+    background-color: rgba(59, 59, 59, 0.329);
+    padding: 5px;
+    border-radius: 10%;
+    cursor: pointer;
 }
+
 input {
-margin: 4px;
- color: rgba(59, 59, 59, 0.900);
- width: 250px;
+    margin: 4px;
+    color: rgba(59, 59, 59, 0.900);
+    width: 450px;
+    padding: 3px;
 }
+
 table {
     border: none;
     width: 100%;
     background-color: white;
     margin: 10px;
+    padding: 5px;
 }
+
 th {
+    padding: 10px;
     border-top: solid;
     border-bottom: solid;
     border-width: 1px;
-    padding: 4px;
     text-align: center;
+}
+
+.dotTd {
+    text-align: center;
+}
+
+td {
+    padding: 8px;
 }
 
 .dot {
     height: 25px;
     width: 25px;
-    background-color: #bbb;
+    background-color: rgba(59, 59, 59, 0.555);
     border-radius: 50%;
     display: inline-block;
-  }
+}

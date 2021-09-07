@@ -43,27 +43,27 @@ function FormPage() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span class="dot"></span></td>
                             <td>First we check if something’s at the URL, and that it takes a reasonable amount of time to retrieve.</td>
                         </tr>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span className="dot"></span></td>
                             <td>Test 2</td>
                         </tr>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span className="dot"></span></td>
                             <td>Test 3</td>
                         </tr>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span className="dot"></span></td>
                             <td>Test 4</td>
                         </tr>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span className="dot"></span></td>
                             <td>Test 5</td>
                         </tr>
                         <tr>
-                            <td><span class="dot"></span></td>
+                            <td className='dotTd'><span className="dot"></span></td>
                             <td>Test 6</td>
                         </tr>
                     </tbody>
