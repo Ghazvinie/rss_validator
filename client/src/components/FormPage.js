@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import validator from 'validator';
 import '../FormPage.css';
 import requirements from '../requirements';
 
@@ -7,9 +8,20 @@ function FormPage() {
     const [data, setData] = useState(null);
     const [textInput, setTextInput] = useState('Please input a valid url');
     const [tests, setTests] = useState(requirements);
+    const [urlError, setUrlError] = useState(null)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        setUrlError(null);
+
+        const result = validator.isURL(textInput.trim());
+        if (!result){
+            setUrlError('Invalid URL');
+            return;
+        };
+
+
         const res = await fetch('/api', {
             method: 'POST',
             headers: {
@@ -20,8 +32,6 @@ function FormPage() {
             })
         });
         const data = await res.json();
-
-        console.log(data)
     };
 
     const handleChange = (e) => {
@@ -35,17 +45,15 @@ function FormPage() {
 
             <div className='form-container'>
                 <form onSubmit={(e) => handleSubmit(e)}>
+
                     <input
                         type='text'
                         value={textInput}
                         onChange={(e) => handleChange(e)} />
                     <button>Submit</button>
                 </form>
+                <span className='url-error'>{urlError}</span>
             </div>
-
-
-
-
             <table className="demo">
                 <thead>
                     <tr>
@@ -56,7 +64,7 @@ function FormPage() {
                 <tbody>
                     {tests.map(singleTest => {
                         return (
-                            <tr>
+                            <tr id={singleTest.id}>
                                 <td className='dotTd'>
                                     <span className="dot"
                                     style={{backgroundColor: singleTest.passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
@@ -71,7 +79,7 @@ function FormPage() {
                                     </span>
                                 </td>
                             </tr>
-                        )
+                        );
                     })}
                 </tbody>
             </table>

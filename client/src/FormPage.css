@@ -34,6 +34,10 @@ input {
     width: 450px;
     padding: 3px;
 }
+.url-error {
+    color: red;
+    padding: 5px;
+}
 
 table {
     border: none;
