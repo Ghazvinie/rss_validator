@@ -18,7 +18,7 @@ function FormPage() {
             })
         });
         const data = await res.json();
-        
+
         console.log(data)
     };
 
@@ -52,29 +52,62 @@ function FormPage() {
                 <tbody>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Some description of the what is being tested etc etc etc etc etc 
-                             
+                        <td>
+                            <p>{`<author>`}</p>
+                            This is the author of the article
                         </td>
                     </tr>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Test 2</td>
+                        <td>
+                            <p>{`<guid>`}</p>
+                            This is the Globally Unique Identifier.
+                            The JS Player can use this to match audio articles in your SpeechKit audio content
+                            management system with articles in your content management system.
+                        </td>
                     </tr>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Test 3</td>
+                        <td>
+                            <p>{`<title>`}</p>
+                            This is the article title.
+                        </td>
                     </tr>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Test 4</td>
+                        <td>
+                            <p>{`<description>`}</p>
+                            This is the article description.
+                        </td>
                     </tr>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Test 5</td>
+                        <td>
+                            <p>{`<link>`}</p>
+                            This is the article URL. The JS Player and Player iFrame embed can use this to match audio articles in your
+                            SpeechKit audio content management system with articles in your content management system.</td>
                     </tr>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Test 6</td>
+                        <td>
+                            <p>{`<pubDate>`}</p>
+                            This is the pubDate. If a pubDate is updated e.g, when an update is made to an article. 
+                            SpeechKit will regenerate the audio.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>
+                            <p>{`<enclosure>`}</p>
+                            This is multimedia content e.g. images.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td className='dotTd'><span className="dot"></span></td>
+                        <td>
+                            <p>{`<content>`}</p>
+                            This is the article content (excluding the title).
+                        </td>
                     </tr>
                 </tbody>
             </table>
