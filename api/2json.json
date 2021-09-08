@@ -1,0 +1,767 @@
+{
+    "rss": {
+        "xmlns:a10": "http://www.w3.org/2005/Atom",
+        "version": "2.0",
+        "channel": {
+            "xmlns:p4": "#billsSchema",
+            "title": "All Bills",
+            "link": "https://bills.parliament.uk/",
+            "description": "A list of up to 50 of most recent bills for the current session",
+            "copyright": "Copyright 2021, Houses of Parliament",
+            "lastBuildDate": "Wed, 08 Sep 2021 19:40:18 +0100",
+            "a10:id": "https://bills-api.parliament.uk/Rss/AllBill",
+            "item": [
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3045"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3045",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Critical Benchmarks (References and Administrators' Liability) Bill [HL]",
+                    "description": "A Bill to make provision about the meaning of references to Article 23A benchmarks in contracts and other arrangements; and to make provision about the liability of administrators of Article 23A benchmarks",
+                    "a10:updated": "2021-09-08T18:56:54+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2861"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2861",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Rating (Coronavirus) and Directors Disqualification (Dissolved Companies) Bill",
+                    "description": "A Bill to make provision about matters attributable to coronavirus that may not be taken\r\naccount of in making certain determinations for the purposes of non-domestic rating;\r\nand to make provision in connection with the disqualification of directors of\r\ncompanies that are dissolved without becoming insolvent.",
+                    "a10:updated": "2021-09-08T18:17:01+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3022"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3022",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Health and Care Bill",
+                    "description": "A Bill to make provision about health and social care.",
+                    "a10:updated": "2021-09-08T18:15:36+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2822"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2822",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Armed Forces Bill",
+                    "description": "A Bill to continue the Armed Forces Act 2006; to amend that Act and other enactments relating to the armed forces; to make provision about service in the reserve forces; to make provision about pardons for certain abolished service offences; to make provision about war pensions; and for connected purposes.",
+                    "a10:updated": "2021-09-08T18:13:19+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2952"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2952",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Hospitals (Parking Charges and Business Rates) Bill",
+                    "description": "A Bill to prohibit charging for car parking at NHS Hospitals for patients and visitors; to make provision for NHS Hospitals to be exempt from business rates; and for connected purposes.",
+                    "a10:updated": "2021-09-08T17:49:15+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2958"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2958",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Voter Registration Bill",
+                    "description": "A Bill to prohibit persons from being registered to vote in Parliamentary elections at more than one address; and for connected purposes.",
+                    "a10:updated": "2021-09-08T17:48:43+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2961"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2961",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Asylum Seekers (Return to Safe Countries) Bill",
+                    "description": "A Bill to require asylum seekers who have arrived in the United Kingdom from a safe country to be immediately returned to that country; and for connected purposes.",
+                    "a10:updated": "2021-09-08T17:48:06+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2926"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2926",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Covid-19 Vaccine Damage Bill",
+                    "description": "A Bill to require the Secretary of State to establish an independent review of disablement caused by Covid-19 vaccinations and the adequacy of the compensation offered to persons so disabled; and for connected purposes.",
+                    "a10:updated": "2021-09-08T17:47:28+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3037"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3037",
+                    "category": [
+                        "Private Members' Bill (under the Ten Minute Rule)",
+                        "Commons"
+                    ],
+                    "title": "Dogs (Protection of Livestock) Bill",
+                    "description": "A Bill to amend the Dogs (Protection of Livestock) Act 1953; and for connected purposes.",
+                    "a10:updated": "2021-09-08T17:47:00+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2895"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2895",
+                    "category": [
+                        "Private Members' Bill (Ballot Bill)",
+                        "Commons"
+                    ],
+                    "title": "Education (Careers Guidance in Schools) Bill",
+                    "description": "A Bill to extend the duty to provide careers guidance in schools.",
+                    "a10:updated": "2021-09-08T17:02:15+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3020"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3020",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Elections Bill",
+                    "description": "A Bill to make provision about the administration and conduct of elections, including provision designed to strengthen the integrity of the electoral process; about overseas electors; about voting and candidacy rights of EU citizens; about the designation of a strategy and policy statement for the Electoral Commission; about the membership of the Speaker's Committee; about the Electoral Commission's functions in relation to criminal proceedings; about financial information to be provided by a political party on applying for registration; for preventing a person being registered as a political party and being a recognised non-party campaigner at the same time; about regulation of expenditure for political purposes; about disqualification of offenders for holding elective offices; about information to be included in electronic campaigning material; and for connected purposes.",
+                    "a10:updated": "2021-09-08T16:45:23+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3021"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3021",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Building Safety Bill",
+                    "description": "A Bill to make provision about the safety of people in or about buildings and the standard of \r\nbuildings, to amend the Architects Act 1997, and to amend provision about complaints \r\nmade to a housing ombudsman.",
+                    "a10:updated": "2021-09-08T16:42:59+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3042"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3042",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Social Security (Up-rating of Benefits) Bill",
+                    "description": "A Bill to make provision relating to the up-rating of certain social security benefits payable in the tax year 2022-23.",
+                    "a10:updated": "2021-09-08T14:41:28+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3038"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3038",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Button Batteries (Safety) Bill",
+                    "description": "A Bill to make provision about the safety of button batteries; and for connected purposes.",
+                    "a10:updated": "2021-09-08T14:29:05+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3044"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3044",
+                    "category": [
+                        "Private Members' Bill (under the Ten Minute Rule)",
+                        "Commons"
+                    ],
+                    "title": "Transport (Disabled Passenger Charter) Bill",
+                    "description": "A Bill to establish a passenger charter for disabled land transport passengers setting out their rights, the legal obligations of transport operators, complaints procedures, passenger assistance schemes and accessibility requirements; and for connected purposes.",
+                    "a10:updated": "2021-09-08T14:16:53+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3043"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3043",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Misuse of Fireworks Bill",
+                    "description": "A Bill to make provision about offences relating to the misuse of fireworks and penalties for such offences; and for connected purposes.",
+                    "a10:updated": "2021-09-08T12:33:31+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2518"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2518",
+                    "category": [
+                        "Private Bill",
+                        "Lords"
+                    ],
+                    "title": "Highgate Cemetery Bill [HL]",
+                    "description": "A Bill to confer powers upon the Friends of Highgate Cemetery Trust to operate, maintain and improve Highgate Cemetery and to extinguish rights of burial and disturb human remains in Highgate Cemetery for the purpose of increasing the space for interments and the improvement of Highgate Cemetery; and for connected purposes.",
+                    "a10:updated": "2021-09-08T12:19:18+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2519"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2519",
+                    "category": [
+                        "Private Bill",
+                        "Commons"
+                    ],
+                    "title": "Monken Hadley Common Bill",
+                    "description": "A Bill to transfer the ownership and management of Monken Hadley Common to Monken Hadley Common Trust and for related purposes.",
+                    "a10:updated": "2021-09-08T12:18:26+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2862"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2862",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Higher Education (Freedom of Speech) Bill",
+                    "description": "A Bill to make provision in relation to freedom of speech and academic freedom in higher\r\neducation institutions and in students’ unions; and for connected purposes.",
+                    "a10:updated": "2021-09-08T12:18:25+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3032"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3032",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Public Service Pensions and Judicial Offices Bill [HL]",
+                    "description": "A Bill to make provision about public service pension schemes, including retrospective provision to rectify unlawful discrimination in the way in which existing schemes were restricted under the Public Service Pensions Act 2013 and corresponding Northern Ireland legislation; to make provision for the establishment of new public pension schemes for members of occupational pension schemes of bodies that were brought into public ownership under the Banking (Special Provisions) Act 2008; to make provision about the remuneration and the date of retirement of holders of certain judicial offices; to make provision about judicial service after retirement; and for connected purposes",
+                    "a10:updated": "2021-09-08T09:41:46+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2860"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2860",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "National Insurance Contributions Bill",
+                    "description": "A Bill to make provision in relation to national insurance contributions.",
+                    "a10:updated": "2021-09-08T09:21:04+01:00"
+                },
+                {
+                    "p4:stage": "1st reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3041"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3041",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Health and Social Care Levy Bill",
+                    "description": "This Bill will be published after the House’s decisions on the Ways and Means Resolutions. These resolutions would authorise the imposition of a tax on the earnings or profits of persons who pay national insurance contributions, or who would pay national insurance contributions but for the fact they are over state pension age. The proceeds of the tax are to be used only for the purposes of meeting the costs of health and social care. It would also authorise a temporary increase in the rates of national insurance contributions, with the proceeds being applied towards the cost of the National Health Service in England, Wales, Scotland and Northern Ireland.",
+                    "a10:updated": "2021-09-07T22:04:32+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2593"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2593",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Environment Bill",
+                    "description": "A Bill to make provision about targets, plans and policies for improving the natural environment; for statements and reports about environmental protection; for the Office for Environmental Protection; about waste and resource efficiency; about air quality; for the recall of products that fail to meet environmental standards; about water; about nature and biodiversity; for conservation covenants; about the\r\nregulation of chemicals; and for connected purposes.",
+                    "a10:updated": "2021-09-07T09:08:10+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2904"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2904",
+                    "category": [
+                        "Private Members' Bill (Ballot Bill)",
+                        "Commons"
+                    ],
+                    "title": "Taxis and Private Hire Vehicles (Safeguarding and Road Safety) Bill",
+                    "description": "A Bill to make provision about licensing in relation to taxis and private hire vehicles for purposes relating to the safeguarding of passengers and road safety; and for connected purposes.",
+                    "a10:updated": "2021-09-06T17:46:14+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3024"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3024",
+                    "category": [
+                        "Private Members' Bill (under the Ten Minute Rule)",
+                        "Commons"
+                    ],
+                    "title": "Fire and Building Safety (Public Inquiry) Bill",
+                    "description": "A Bill to establish an independent public inquiry into the Government’s response to concerns about fire and building safety.",
+                    "a10:updated": "2021-09-06T16:28:10+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2859"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2859",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Dissolution and Calling of Parliament Bill",
+                    "description": "A Bill to make provision about the dissolution and calling of Parliament, including provision for the repeal of the Fixed-term Parliaments Act 2011; and for connected purposes.",
+                    "a10:updated": "2021-09-03T18:27:52+01:00"
+                },
+                {
+                    "p4:stage": "3rd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2864"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2864",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Leasehold Reform (Ground Rent) Bill [HL]",
+                    "description": "A Bill to make provision about the rent payable under long leases of dwellings; and for connected purposes",
+                    "a10:updated": "2021-09-02T14:49:42+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2906"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2906",
+                    "category": [
+                        "Private Members' Bill (Ballot Bill)",
+                        "Commons"
+                    ],
+                    "title": "Cultural Objects (Protection from Seizure) Bill",
+                    "description": "A Bill to extend the protection from seizure or forfeiture given to cultural objects.",
+                    "a10:updated": "2021-09-02T14:29:42+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2883"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2883",
+                    "category": [
+                        "Private Members' Bill (Starting in the House of Lords)",
+                        "Lords"
+                    ],
+                    "title": "Refugees (Family Reunion) Bill [HL]",
+                    "description": "A Bill to make provision for leave to enter or remain in the United Kingdom to be granted to the family members of refugees and of people granted humanitarian protection; and to provide for legal aid to be made available in such cases",
+                    "a10:updated": "2021-09-01T16:13:04+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2876"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2876",
+                    "category": [
+                        "Private Members' Bill (Starting in the House of Lords)",
+                        "Lords"
+                    ],
+                    "title": "Status of Workers Bill [HL]",
+                    "description": "A Bill to make provision for the creation of a single status for workers by amending the meaning of “employee”, “worker”, “employer” and related expressions in the Trade Union and Labour Relations (Consolidation) Act 1992, the Employment Rights Act 1996 and cognate legislation; and for connected purposes",
+                    "a10:updated": "2021-08-27T16:40:36+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2806"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2806",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Telecommunications (Security) Bill",
+                    "description": "A Bill to make provision about the security of public electronic communications networks and public electronic communications services.",
+                    "a10:updated": "2021-08-27T14:04:27+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2877"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2877",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Charities Bill [HL]",
+                    "description": "A Bill to amend the Charities Act 2011 and the Universities and College Estates Act 1925; and for connected purposes",
+                    "a10:updated": "2021-08-27T14:02:28+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2839"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2839",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Police, Crime, Sentencing and Courts Bill",
+                    "description": "A Bill to make provision about the police and other emergency workers; to make provision about collaboration between authorities to prevent and reduce serious violence; to make provision about offensive weapons homicide reviews; to make provision for new offences and for the modification of existing offences; to make provision about the powers of the police and other authorities for the purposes of preventing, detecting, investigating or prosecuting crime or investigating other matters; to make provision about the maintenance of public order; to make provision about the removal, storage and disposal of vehicles; to make provision in\r\nconnection with driving offences; to make provision about cautions; to make provision about\r\nbail and remand; to make provision about sentencing, detention, release, management and\r\nrehabilitation of offenders; to make provision about secure 16 to 19 Academies; to make\r\nprovision for and in connection with procedures before courts and tribunals; and for\r\nconnected purposes.",
+                    "a10:updated": "2021-08-27T13:56:15+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3034"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3034",
+                    "category": [
+                        "Private Members' Bill (Starting in the House of Lords)",
+                        "Lords"
+                    ],
+                    "title": "Minimum Energy Performance of Buildings Bill [HL]",
+                    "description": "A Bill to make provision to increase the energy performance of buildings; and for connected purposes",
+                    "a10:updated": "2021-08-26T14:57:44+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3010"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3010",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Workers (Rights) (No. 2) Bill",
+                    "description": "A Bill to make provision about workers’ rights; and for connected purposes.",
+                    "a10:updated": "2021-08-19T10:23:20+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2880"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2880",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Animal Welfare (Kept Animals) Bill",
+                    "description": "A Bill to make provision about the welfare of certain kept animals that are in, imported into, or exported from Great Britain.",
+                    "a10:updated": "2021-08-18T09:33:37+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2927"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2927",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Employment Bill",
+                    "description": "A Bill to make provision about the rights of workers, including to negotiate pay and join trade unions and employee associations; to amend the definition of worker; to make provision about the employment rights of members of the armed forces; to make provision about employee representatives on company boards; and for connected purposes.",
+                    "a10:updated": "2021-08-18T09:21:51+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2991"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2991",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Workers (Employment Security and Definition) Bill",
+                    "description": "A Bill to make provision about employment security and the rights of workers; to amend the definition of worker; and for connected purposes.",
+                    "a10:updated": "2021-08-18T09:20:53+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3011"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3011",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Automated External Defibrillators (Public Access) Bill",
+                    "description": "A Bill to require the installation of automated external defibrillators in public buildings, sporting facilities, schools, higher education and other education and skills facilities, and facilities that provide care to vulnerable people; and to make associated provision about training and signage.",
+                    "a10:updated": "2021-08-18T09:19:44+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3015"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3015",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Subsidy Control Bill",
+                    "description": "A Bill to make provision regulating the giving of subsidies out of public resources; and for\r\nconnected purposes.",
+                    "a10:updated": "2021-08-04T16:05:15+01:00"
+                },
+                {
+                    "p4:stage": "Committee stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3023"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3023",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Nationality and Borders Bill",
+                    "description": "Make provision about nationality, asylum and immigration; to make provision about victims of slavery or human trafficking; to provide a power for Tribunals to charge participants where their behaviour has wasted the Tribunal’s resources; and for connected purposes.",
+                    "a10:updated": "2021-07-23T15:05:23+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3040"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3040",
+                    "category": [
+                        "Private Members' Bill (under the Ten Minute Rule)",
+                        "Commons"
+                    ],
+                    "title": "United Kingdom Atomic Energy Authority Pension Transfers (Parliamentary and Health Service Ombudsman Investigation) Bill Bill",
+                    "description": "A Bill to make provision to enable the Parliamentary and Health Service Ombudsman to investigate advice and information given by the Secretary of State and the Government Actuary relating to transfers of pensions from the United Kingdom Atomic Energy Authority pension schemes to the AEA Technology pension scheme; and for connected purposes.",
+                    "a10:updated": "2021-07-23T14:26:00+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3039"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3039",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Local Electricity Bill",
+                    "description": "A Bill to enable electricity generators to become local electricity suppliers; and for connected purposes.",
+                    "a10:updated": "2021-07-23T14:17:27+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2870"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2870",
+                    "category": [
+                        "Private Members' Bill (Starting in the House of Lords)",
+                        "Lords"
+                    ],
+                    "title": "Office of the Whistleblower Bill [HL]",
+                    "description": "A Bill to make provision for an Office of the Whistleblower",
+                    "a10:updated": "2021-07-23T00:00:56+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2943"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2943",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Climate and Ecology Bill",
+                    "description": "A Bill to require the United Kingdom to achieve climate and nature targets; to give the Secretary of State a duty to implement a strategy to achieve those targets; to establish a Climate and Nature Assembly to advise the Secretary of State in creating that strategy; to give duties to the Committee on Climate Change and the Joint Nature Conservation Committee regarding the strategy and targets; and for connected purposes.",
+                    "a10:updated": "2021-07-22T15:05:31+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2867"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2867",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Animal Welfare (Sentience) Bill [HL]",
+                    "description": "A Bill to make provision for an Animal Sentience Committee with functions relating to the effect of government policy on the welfare of animals as sentient beings",
+                    "a10:updated": "2021-07-22T12:57:53+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3036"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3036",
+                    "category": [
+                        "Private Members' Bill (Presentation Bill)",
+                        "Commons"
+                    ],
+                    "title": "Minimum Energy Performance of Buildings (No. 2) Bill",
+                    "description": "A Bill to make provision to increase the minimum energy performance of buildings; and for connected purposes.",
+                    "a10:updated": "2021-07-22T10:04:49+01:00"
+                },
+                {
+                    "p4:stage": "2nd reading",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/3035"
+                    },
+                    "link": "https://bills.parliament.uk/bills/3035",
+                    "category": [
+                        "Government Bill",
+                        "Commons"
+                    ],
+                    "title": "Judicial Review and Courts Bill",
+                    "description": "A Bill to Make provision about the provision that may be made by, and the effects of, quashing orders; to make provision restricting judicial review of certain decisions of the Upper Tribunal; to make provision about the use of written and electronic procedures in courts and tribunals; to make other provision about procedure in, and the organisation of, courts and tribunals; and for connected purposes.",
+                    "a10:updated": "2021-07-22T09:56:51+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2868"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2868",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Skills and Post-16 Education Bill [HL]",
+                    "description": "A Bill to make provision about local skills improvement plans; to make provision relating to further education; to make provision about functions of the Institute for Apprenticeships and Technical Education and relating to technical education qualifications; to make provision about student finance and fees; to make provision about assessments by the Office for Students; to make provision about the funding of certain post-16 education or training providers; and for connected purposes",
+                    "a10:updated": "2021-07-22T09:31:10+01:00"
+                },
+                {
+                    "p4:stage": "Report stage",
+                    "guid": {
+                        "isPermaLink": "true",
+                        "$t": "https://bills.parliament.uk/bills/2865"
+                    },
+                    "link": "https://bills.parliament.uk/bills/2865",
+                    "category": [
+                        "Government Bill",
+                        "Lords"
+                    ],
+                    "title": "Professional Qualifications Bill [HL]",
+                    "description": "A Bill to make provision relating to entitlement to practise certain professions, occupations and trades; and for connected purposes",
+                    "a10:updated": "2021-07-21T19:40:31+01:00"
+                }
+            ]
+        }
+    }
+}

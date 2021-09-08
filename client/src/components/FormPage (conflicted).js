@@ -52,8 +52,7 @@ function FormPage() {
                 <tbody>
                     <tr>
                         <td className='dotTd'><span className="dot"></span></td>
-                        <td>Some description of the what is being tested etc etc etc etc etc 
-                             
+                        <td>Some description of the what is being tested etc etc etc etc etc Some description of the what is being tested etc etc etc etc etc
                         </td>
                     </tr>
                     <tr>
