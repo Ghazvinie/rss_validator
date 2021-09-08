@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../FormPage.css';
+import requirements from '../requirements';
 
 
 function FormPage() {
     const [data, setData] = useState(null);
     const [textInput, setTextInput] = useState('Please input a valid url');
+    const [tests, setTests] = useState(requirements);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -41,6 +43,9 @@ function FormPage() {
                 </form>
             </div>
 
+
+
+
             <table className="demo">
                 <thead>
                     <tr>
@@ -49,65 +54,20 @@ function FormPage() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<author>`}</p>
-                            This is the author of the article
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<guid>`}</p>
-                            This is the Globally Unique Identifier.
-                            The JS Player can use this to match audio articles in your SpeechKit audio content
-                            management system with articles in your content management system.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<title>`}</p>
-                            This is the article title.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<description>`}</p>
-                            This is the article description.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<link>`}</p>
-                            This is the article URL. The JS Player and Player iFrame embed can use this to match audio articles in your
-                            SpeechKit audio content management system with articles in your content management system.</td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<pubDate>`}</p>
-                            This is the pubDate. If a pubDate is updated e.g, when an update is made to an article. 
-                            SpeechKit will regenerate the audio.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<enclosure>`}</p>
-                            This is multimedia content e.g. images.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='dotTd'><span className="dot"></span></td>
-                        <td>
-                            <p>{`<content>`}</p>
-                            This is the article content (excluding the title).
-                        </td>
-                    </tr>
+                    {tests.map(singleTest => {
+                        console.log(singleTest)
+                        return (
+                            <tr>
+                                <td className='dotTd'><span className="dot"></span></td>
+                                <td>
+                                    <p>{singleTest.title}</p>
+                                    <span >
+                                        {singleTest.description}
+                                    </span>
+                                </td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
 
@@ -116,3 +76,5 @@ function FormPage() {
 }
 
 export default FormPage;
+
+

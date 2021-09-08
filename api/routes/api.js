@@ -13,9 +13,10 @@ router.post('/',(req, res) => {
 
 const getData = async (url) => {
     try {
-      const response = await axios.get('https://bills.parliament.uk/rss/allbills.rss')
+      const response = await axios.get('https://www.theguardian.com/world/zimbabwe/rss')
       const data = response.data;
       const json = parser.toJson(data, {
+        object: true
       });
 
       // parseString(data, (err, result) => {
