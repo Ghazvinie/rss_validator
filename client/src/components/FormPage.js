@@ -55,10 +55,15 @@ function FormPage() {
                 </thead>
                 <tbody>
                     {tests.map(singleTest => {
-                        console.log(singleTest)
                         return (
                             <tr>
-                                <td className='dotTd'><span className="dot"></span></td>
+                                <td className='dotTd'>
+                                    <span className="dot"
+                                    style={{backgroundColor: singleTest.passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
+                                           singleTest.passStatus ? 'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
+                                        }}>
+                                        </span>
+                                </td>
                                 <td>
                                     <p>{singleTest.title}</p>
                                     <span >
