@@ -12,6 +12,10 @@
 h1 {
     color: #007aff;
 }
+a {
+    text-decoration: underline;
+    color: inherit;
+}
 
 button {
     margin: 4px;

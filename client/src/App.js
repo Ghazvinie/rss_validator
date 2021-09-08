@@ -16,9 +16,13 @@ function App() {
   return (
     <>
       <main>
-          <h1>SpeechKit RSS Validator</h1>
-          <h2>Check if your feed is valid:</h2>
-          <FormPage />
+        <h1>SpeechKit RSS Validator</h1>
+        <h2>Check if your feed is valid:</h2>
+        <div>
+          (The feed requirements can be found <a href='https://docs.speechkit.io/rss-feed/rss-feed-requirements'>here</a>. 
+          On submitting an URL you will be alerted to any elements that are missing)
+        </div>
+        <FormPage />
       </main>
     </>
   );

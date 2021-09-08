@@ -30,7 +30,6 @@ function FormPage() {
 
     return (
         <div className='form-table-container'>
-            {data}
 
             <div className='form-container'>
                 <form onSubmit={(e) => handleSubmit(e)}>
