@@ -1,7 +1,7 @@
 const requirements = [
 
     {
-        title: 'url',
+        title: 'URL',
         description: 'This is the URL to your feed.',
         passStatus: 'none'
     },
@@ -58,13 +58,18 @@ const requirementsObj = {
         description: 'This is the author of the article.',
         passStatus: 'none'
     },
+    guid : {
+        title: '<guid>',
+        description: 'This is the Globally Unique Identifier. The JS Player can use this to match audio articles in your SpeechKit audio content management system with articles in your content management system.',
+        passStatus: 'none'
+    },
     title : {
-        title: '<link>',
-        description: 'This is the article URL. The JS Player and Player iFrame embed can use this to match audio articles in your SpeechKit audio content management system with articles in your content management system.',
+        title: '<title>',
+        description: 'This is the article title.',
         passStatus: 'none'
     }, 
     description: {
-        title: '<guid>',
+        title: '<description>',
         description: 'This is the article description.',
         passStatus: 'none'
     },

@@ -21,9 +21,14 @@ function FormPage() {
         const result = validator.isURL(textInput.trim());
         if (!result) {
             setUrlError('Invalid URL');
-            setTests((prevTests) => {
-                return
-            });
+            setTests((prevTests) => ({
+                ...prevTests,
+                url: {
+                    ...prevTests.url,
+                    passStatus: false,
+                    description: 'Please check your URL and try again'
+                }
+            }));
 
         };
 
@@ -76,17 +81,17 @@ function FormPage() {
                         return (
                             <tr >
                                 <td className='dotTd'>
-                                    {/* <span className="dot"
+                                    <span className="dot"
                                         style={{
                                             backgroundColor: tests[singleTest].passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
                                                 tests[singleTest].passStatus ? 'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
                                         }}>
-                                    </span> */}
+                                    </span>
                                 </td>
                                 <td>
-                                    <p>{`${tests[singleTest]}`}</p>
+                                    <p>{tests[singleTest].title}</p>
                                     <span >
-                                        {}
+                                        {tests[singleTest].description}
                                     </span>
                                 </td>
                             </tr>
