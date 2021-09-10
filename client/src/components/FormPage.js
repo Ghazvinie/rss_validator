@@ -6,7 +6,7 @@ import requirements from '../requirements';
 
 function FormPage() {
     const [data, setData] = useState(null);
-    const [textInput, setTextInput] = useState('Please input a valid url');
+    const [textInput, setTextInput] = useState('');
     const [tests, setTests] = useState(requirements);
     const [urlError, setUrlError] = useState(null)
 
@@ -18,7 +18,10 @@ function FormPage() {
         const result = validator.isURL(textInput.trim());
         if (!result){
             setUrlError('Invalid URL');
-            return;
+            setTests((prevTests) => [
+                prevTests[0].passStatus = false, ...prevTests
+            ]);
+            console.log(tests)
         };
 
 
@@ -32,6 +35,7 @@ function FormPage() {
             })
         });
         const data = await res.json();
+        console.log(data)
     };
 
     const handleChange = (e) => {
@@ -49,7 +53,8 @@ function FormPage() {
                     <input
                         type='text'
                         value={textInput}
-                        onChange={(e) => handleChange(e)} />
+                        onChange={(e) => handleChange(e)}
+                         />
                     <button>Submit</button>
                 </form>
                 <span className='url-error'>{urlError}</span>
@@ -64,7 +69,7 @@ function FormPage() {
                 <tbody>
                     {tests.map(singleTest => {
                         return (
-                            <tr id={singleTest.id}>
+                            <tr key={singleTest.id}>
                                 <td className='dotTd'>
                                     <span className="dot"
                                     style={{backgroundColor: singleTest.passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
