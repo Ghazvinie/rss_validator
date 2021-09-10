@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import validator from 'validator';
 import '../FormPage.css';
-import requirements from '../requirements';
+import { requirements, requirementsObj } from '../requirements';
 
 
 function FormPage() {
     const [data, setData] = useState(null);
     const [textInput, setTextInput] = useState('');
-    const [tests, setTests] = useState(requirements);
+    const [tests, setTests] = useState(requirementsObj);
+    const [passStatuses, setPassStatuses] = useState();
     const [urlError, setUrlError] = useState(null)
+
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,12 +19,12 @@ function FormPage() {
         setUrlError(null);
 
         const result = validator.isURL(textInput.trim());
-        if (!result){
+        if (!result) {
             setUrlError('Invalid URL');
-            setTests((prevTests) => [
-                prevTests[0].passStatus = false, ...prevTests
-            ]);
-            console.log(tests)
+            setTests((prevTests) => {
+                return
+            });
+
         };
 
 
@@ -54,7 +57,8 @@ function FormPage() {
                         type='text'
                         value={textInput}
                         onChange={(e) => handleChange(e)}
-                         />
+                        placeholder='Please input a valid url'
+                    />
                     <button>Submit</button>
                 </form>
                 <span className='url-error'>{urlError}</span>
@@ -67,7 +71,28 @@ function FormPage() {
                     </tr>
                 </thead>
                 <tbody>
-                    {tests.map(singleTest => {
+                    {Object.keys(tests).map(singleTest => {
+                        console.log(tests[singleTest].description)
+                        return (
+                            <tr >
+                                <td className='dotTd'>
+                                    {/* <span className="dot"
+                                        style={{
+                                            backgroundColor: tests[singleTest].passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
+                                                tests[singleTest].passStatus ? 'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
+                                        }}>
+                                    </span> */}
+                                </td>
+                                <td>
+                                    <p>{`${tests[singleTest]}`}</p>
+                                    <span >
+                                        {}
+                                    </span>
+                                </td>
+                            </tr>
+                        );
+                    })}
+                    {/* {tests.map(singleTest => {
                         return (
                             <tr key={singleTest.id}>
                                 <td className='dotTd'>
@@ -85,7 +110,7 @@ function FormPage() {
                                 </td>
                             </tr>
                         );
-                    })}
+                    })} */}
                 </tbody>
             </table>
 
