@@ -1,17 +1,25 @@
 .form-table-container {
-    width: 60%;
+    width: 65%;
     padding: 10px;
 }
 
-.form-container {
+.form-container{
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: #007aff;
 }
+
 a {
     text-decoration: underline;
     color: inherit;
@@ -22,18 +30,20 @@ button {
     border: none;
     background-color: rgba(59, 59, 59, 0.329);
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 3%;
     cursor: pointer;
     font-weight: 800;
     letter-spacing: 0.1rem;
+    width: 12%
 }
 
 input {
     margin: 4px;
     color: rgba(59, 59, 59, 0.900);
-    width: 450px;
+    width: 50%;
     padding: 3px;
 }
+
 .url-error {
     color: red;
     padding: 5px;
@@ -74,14 +84,44 @@ td {
     border-radius: 50%;
     display: inline-block;
 }
+
 .title {
     color: #007bffd8;
     margin: 0px;
     padding-bottom: 13px;
 }
+
 .found-status {
     font-weight: 600;
 }
+
 .found-status, .test-description {
     display: inline;
+}
+
+.spin-icon {
+    -webkit-animation: icon-spin 2s infinite linear;
+    animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
 }

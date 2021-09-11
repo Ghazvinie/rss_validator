@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import validator from 'validator';
 import '../FormPage.css';
 import { requirementsObj } from '../requirements';
-import {ImSpinner3} from 'react-icons/im'
+import {ImSpinner6} from 'react-icons/im'
 
 import ElementDescriptions from './ElementDescriptions';
 
@@ -69,7 +69,7 @@ function FormPage() {
                         onChange={(e) => handleChange(e)}
                         placeholder='Please input a valid url'
                     />
-                    <button>{isParsing ? <ImSpinner3/> : 'Submit'}</button>
+                    <button>{isParsing ? <ImSpinner6 className='spin-icon'/> : 'Submit'}</button>
                 </form>
                 <span className='url-error'>{urlError}</span>
             </div>
