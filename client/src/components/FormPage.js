@@ -3,7 +3,7 @@ import validator from 'validator';
 import '../FormPage.css';
 import { requirements, requirementsObj } from '../requirements';
 
-import ElementStatus from './ElementStatus';
+import ElementDescriptions from './ElementDescriptions';
 
 
 function FormPage() {
@@ -21,7 +21,8 @@ function FormPage() {
 
         const result = validator.isURL(textInput.trim());
         if (!result) {
-            setUrlError('Invalid URL')
+            setUrlError('Invalid URL');
+            return;
         };
 
         const res = await fetch('/api', {
@@ -90,11 +91,7 @@ function FormPage() {
                                 <td>
                                     <p className='title' >{tests[singleTest].title}</p>
                                     <span >
-                                        <ElementStatus passStatus={tests[singleTest.passStatus] } description={tests[singleTest].startDescription}/>
-                                        {/* {tests[singleTest].passStatus === 'none' ? tests[singleTest].startDescription :
-                                            tests[singleTest].passStatus ?
-                                               <> <div className='found-status'>Element Found -</div><div>{tests[singleTest].startDescription}</div> </> :
-                                    `Element Not Found - ${tests[singleTest].startDescription}`} */}
+                                        <ElementDescriptions passStatus={tests[singleTest.passStatus] } description={tests[singleTest].startDescription}/>
                                 </span>
                             </td>
                             </tr>

@@ -1,4 +1,4 @@
-function ElementStatus(props) {
+function ElementDescriptions(props) {
 
     return (
         <>
@@ -18,5 +18,5 @@ function ElementStatus(props) {
     )
 }
 
-export default ElementStatus;
+export default ElementDescriptions;
 
