@@ -46,28 +46,3 @@ router.post('/', async (req, res) => {
 
 
 module.exports = router;
-
-
-// const { item } = json.rss.channel;
-//       testProperties.map(testItem => {
-//         if (item[0][testItem]){
-//           results[testItem] = true;
-//         } else {
-//           results[testItem] = false;
-//         };
-
-//         const json = parser.toJson(data, {
-//           object: true
-//         });
-
-
-//         const { item } = json.rss.channel;
-//         testProperties.map(testItem => {
-//           if (item[0][testItem]){
-//             results[testItem] = true;
-//           } else {
-//             results[testItem] = false;
-//           };
-//         });
-
-//         res.send(results);
