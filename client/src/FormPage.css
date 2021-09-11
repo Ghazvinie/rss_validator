@@ -79,3 +79,9 @@ td {
     margin: 0px;
     padding-bottom: 13px;
 }
+.found-status {
+    font-weight: 600;
+}
+.found-status, .test-description {
+    display: inline;
+}

@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import validator from 'validator';
 import '../FormPage.css';
-import { requirements, requirementsObj } from '../requirements';
+import { requirementsObj } from '../requirements';
 
 import ElementDescriptions from './ElementDescriptions';
 
 
 function FormPage() {
-    const [data, setData] = useState(null);
     const [textInput, setTextInput] = useState('');
     const [tests, setTests] = useState(requirementsObj);
-    const [passStatuses, setPassStatuses] = useState();
     const [urlError, setUrlError] = useState(null)
 
-
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setTextInput(value);
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -47,10 +48,7 @@ function FormPage() {
         };
     };
 
-    const handleChange = (e) => {
-        const value = e.target.value;
-        setTextInput(value);
-    };
+
 
 
     return (
@@ -90,34 +88,16 @@ function FormPage() {
                                 </td>
                                 <td>
                                     <p className='title' >{tests[singleTest].title}</p>
-                                    <span >
-                                        <ElementDescriptions passStatus={tests[singleTest.passStatus] } description={tests[singleTest].startDescription}/>
-                                </span>
-                            </td>
-                            </tr>
-                );
-                    })}
-                {/* {tests.map(singleTest => {
-                        return (
-                            <tr key={singleTest.id}>
-                                <td className='dotTd'>
-                                    <span className="dot"
-                                    style={{backgroundColor: singleTest.passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
-                                           singleTest.passStatus ? 'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
-                                        }}>
-                                        </span>
-                                </td>
-                                <td>
-                                    <p>{singleTest.title}</p>
-                                    <span >
-                                        {singleTest.description}
-                                    </span>
+                                    <ElementDescriptions passStatus={tests[singleTest].passStatus}
+                                        startDescription={tests[singleTest].startDescription}
+                                        passDescription={tests[singleTest].passDescription}
+                                        failDescription={tests[singleTest].failDescription} />
                                 </td>
                             </tr>
                         );
-                    })} */}
-            </tbody>
-        </table>
+                    })}
+                </tbody>
+            </table>
 
         </div >
     );
