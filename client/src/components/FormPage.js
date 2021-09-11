@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import validator from 'validator';
 import '../FormPage.css';
 import { requirementsObj } from '../requirements';
+import {ImSpinner3} from 'react-icons/im'
 
 import ElementDescriptions from './ElementDescriptions';
 
@@ -10,6 +11,7 @@ function FormPage() {
     const [textInput, setTextInput] = useState('');
     const [tests, setTests] = useState(requirementsObj);
     const [urlError, setUrlError] = useState(null);
+    const [isParsing, setIsParsing] = useState(false);
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -20,10 +22,12 @@ function FormPage() {
         e.preventDefault();
         setUrlError(null);
         setTests(requirementsObj);
+        setIsParsing(true);
 
         const result = validator.isURL(textInput.trim());
         if (!result) {
             setUrlError('Invalid URL');
+            setIsParsing(false);
             return;
         };
 
@@ -47,6 +51,7 @@ function FormPage() {
                 }
             }));
         };
+        setIsParsing(false);
     };
 
 
@@ -64,7 +69,7 @@ function FormPage() {
                         onChange={(e) => handleChange(e)}
                         placeholder='Please input a valid url'
                     />
-                    <button>Submit</button>
+                    <button>{isParsing ? <ImSpinner3/> : 'Submit'}</button>
                 </form>
                 <span className='url-error'>{urlError}</span>
             </div>
@@ -82,16 +87,16 @@ function FormPage() {
                                 <td className='dotTd'>
                                     <span className="dot"
                                         style={{
-                                            backgroundColor: tests[singleTest].passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' :
-                                                tests[singleTest].passStatus ? 'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
+                                            backgroundColor: tests[singleTest].passStatus === 'none' ? 'rgba(59, 59, 59, 0.255)' : tests[singleTest].passStatus ?
+                                                'rgba(63, 213, 63, 0.555)' : 'rgba(255, 0, 64, 0.555)'
                                         }}>
                                     </span>
                                 </td>
                                 <td>
                                     <p className='title' >{tests[singleTest].title}</p>
-                                    <ElementDescriptions passStatus={tests[singleTest].passStatus}
+                                    <ElementDescriptions
+                                        passStatus={tests[singleTest].passStatus}
                                         startDescription={tests[singleTest].startDescription}
-                                        passDescription={tests[singleTest].passDescription}
                                         failDescription={tests[singleTest].failDescription} />
                                 </td>
                             </tr>
