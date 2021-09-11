@@ -20,18 +20,16 @@ function FormPage() {
 
         const result = validator.isURL(textInput.trim());
         if (!result) {
-            setUrlError('Invalid URL');
             setTests((prevTests) => ({
                 ...prevTests,
                 url: {
                     ...prevTests.url,
                     passStatus: false,
-                    description: 'Please check your URL and try again'
+                    description: 'Invalid URL - Please check your URL and try again. Other items cannot be checked if the URL is not valid.'
                 }
             }));
-
+            return;
         };
-
 
         const res = await fetch('/api', {
             method: 'POST',
@@ -39,11 +37,20 @@ function FormPage() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                url: textInput
+                url: textInput.trim()
             })
         });
         const data = await res.json();
-        console.log(data)
+
+        for (const item in data) {
+            setTests(prevTests => ({
+                ...prevTests,
+                [item]: {
+                    ...prevTests[item],
+                    passStatus: data[item]
+                }
+            }));
+        };
     };
 
     const handleChange = (e) => {
@@ -66,7 +73,7 @@ function FormPage() {
                     />
                     <button>Submit</button>
                 </form>
-                <span className='url-error'>{urlError}</span>
+                <span className='url-error'></span>
             </div>
             <table className="demo">
                 <thead>
@@ -77,9 +84,8 @@ function FormPage() {
                 </thead>
                 <tbody>
                     {Object.keys(tests).map(singleTest => {
-                        console.log(tests[singleTest].description)
                         return (
-                            <tr >
+                            <tr key={tests[singleTest].title}>
                                 <td className='dotTd'>
                                     <span className="dot"
                                         style={{
