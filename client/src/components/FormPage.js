@@ -3,6 +3,8 @@ import validator from 'validator';
 import '../FormPage.css';
 import { requirements, requirementsObj } from '../requirements';
 
+import ElementStatus from './ElementStatus';
+
 
 function FormPage() {
     const [data, setData] = useState(null);
@@ -15,20 +17,11 @@ function FormPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         setUrlError(null);
 
         const result = validator.isURL(textInput.trim());
         if (!result) {
-            setTests((prevTests) => ({
-                ...prevTests,
-                url: {
-                    ...prevTests.url,
-                    passStatus: false,
-                    description: 'Invalid URL - Please check your URL and try again. Other items cannot be checked if the URL is not valid.'
-                }
-            }));
-            return;
+            setUrlError('Invalid URL')
         };
 
         const res = await fetch('/api', {
@@ -73,7 +66,7 @@ function FormPage() {
                     />
                     <button>Submit</button>
                 </form>
-                <span className='url-error'></span>
+                <span className='url-error'>{urlError}</span>
             </div>
             <table className="demo">
                 <thead>
@@ -95,16 +88,19 @@ function FormPage() {
                                     </span>
                                 </td>
                                 <td>
-                                    <p>{tests[singleTest].title}</p>
+                                    <p className='title' >{tests[singleTest].title}</p>
                                     <span >
-                                        {tests[singleTest].passStatus === 'none' ? tests[singleTest].startDescription : 
-                                        tests[singleTest].passStatus ? `Element Found - ${tests[singleTest].startDescription}` : tests[singleTest].failDescription}
-                                    </span>
-                                </td>
+                                        <ElementStatus passStatus={tests[singleTest.passStatus] } description={tests[singleTest].startDescription}/>
+                                        {/* {tests[singleTest].passStatus === 'none' ? tests[singleTest].startDescription :
+                                            tests[singleTest].passStatus ?
+                                               <> <div className='found-status'>Element Found -</div><div>{tests[singleTest].startDescription}</div> </> :
+                                    `Element Not Found - ${tests[singleTest].startDescription}`} */}
+                                </span>
+                            </td>
                             </tr>
-                        );
+                );
                     })}
-                    {/* {tests.map(singleTest => {
+                {/* {tests.map(singleTest => {
                         return (
                             <tr key={singleTest.id}>
                                 <td className='dotTd'>
@@ -123,10 +119,10 @@ function FormPage() {
                             </tr>
                         );
                     })} */}
-                </tbody>
-            </table>
+            </tbody>
+        </table>
 
-        </div>
+        </div >
     );
 }
 
