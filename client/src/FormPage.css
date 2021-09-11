@@ -14,6 +14,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -34,7 +35,10 @@ button {
     cursor: pointer;
     font-weight: 800;
     letter-spacing: 0.1rem;
-    width: 12%
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 input {
@@ -42,6 +46,7 @@ input {
     color: rgba(59, 59, 59, 0.900);
     width: 50%;
     padding: 3px;
+
 }
 
 .url-error {
