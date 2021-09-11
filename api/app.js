@@ -47,23 +47,4 @@ app.use(function(err, req, res, next) {
 });
 
 
-// https.get('https://feeds.bbci.co.uk/news/rss.xml', res => {
-//   console.log(res)
-//   let data = [];
-//   res.on('data', chunk => {
-//     data.push(chunk);
-//   });
-
-//   res.on('end', () => {
-//     console.log('Response ended: ');
-//     const xml = Buffer.concat(data).toString();
-//     parseString(xml, (err, result) => {
-//       console.dir(JSON.stringify(result))
-//     })
-
-//   });
-// }).on('error', err => {
-//   console.log('Error: ', err.message);
-// });
-
 module.exports = app;

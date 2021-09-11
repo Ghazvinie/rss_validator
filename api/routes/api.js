@@ -16,27 +16,33 @@ router.post('/', async (req, res) => {
       const response = await axios.get(url)
       return response;
     } catch (error) {
-      console.log(error)
+      results.url = false;
+      res.send(results);
+      return;
     };
   };
 
-  const { data } = await getData(url);
-  const json = parser.toJson(data, { object: true });
-  const { item } = json.rss.channel;
+  try {
+    const { data } = await getData(url);
+    const json = parser.toJson(data, { object: true });
+    const { item } = json.rss.channel;
+  
+    testProperties.map(testItem => {
+      if (item[0][testItem]){
+        results[testItem] = true;
+      } else {
+        results[testItem] = false;
+      };
+      results.url = true;
+    });
 
-  testProperties.map(testItem => {
-    if (item[0][testItem]){
-      results[testItem] = true;
-    } else {
-      results[testItem] = false;
-    };
-  });
-
-  console.log(results);
+  } catch (error) {
+    console.log(error)
+    return;
+  };
 
   res.send(results);
-
-})
+});
 
 
 module.exports = router;
