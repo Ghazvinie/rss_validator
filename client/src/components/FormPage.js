@@ -97,7 +97,8 @@ function FormPage() {
                                 <td>
                                     <p>{tests[singleTest].title}</p>
                                     <span >
-                                        {tests[singleTest].description}
+                                        {tests[singleTest].passStatus === 'none' ? tests[singleTest].startDescription : 
+                                        tests[singleTest].passStatus ? `Element Found - ${tests[singleTest].startDescription}` : tests[singleTest].failDescription}
                                     </span>
                                 </td>
                             </tr>
