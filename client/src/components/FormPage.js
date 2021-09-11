@@ -9,7 +9,7 @@ import ElementDescriptions from './ElementDescriptions';
 function FormPage() {
     const [textInput, setTextInput] = useState('');
     const [tests, setTests] = useState(requirementsObj);
-    const [urlError, setUrlError] = useState(null)
+    const [urlError, setUrlError] = useState(null);
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -19,6 +19,7 @@ function FormPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setUrlError(null);
+        setTests(requirementsObj);
 
         const result = validator.isURL(textInput.trim());
         if (!result) {
