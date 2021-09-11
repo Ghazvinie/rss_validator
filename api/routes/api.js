@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
       results.url = false;
       res.send(results);
       return;
-    };
+    }
   };
 
   try {
@@ -32,14 +32,14 @@ router.post('/', async (req, res) => {
         results[testItem] = true;
       } else {
         results[testItem] = false;
-      };
+      }
       results.url = true;
     });
 
   } catch (error) {
     console.log(error)
     return;
-  };
+  }
 
   res.send(results);
 });
