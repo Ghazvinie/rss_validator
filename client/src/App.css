@@ -7,3 +7,6 @@ main {
   color: rgba(59, 59, 59, 0.900);
   margin: 20px;
 }
+h1, h2, p {
+  text-align: center;
+}

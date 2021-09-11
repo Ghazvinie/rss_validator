@@ -18,10 +18,10 @@ function App() {
       <main>
         <h1>SpeechKit RSS Validator</h1>
         <h2>Check if your feed is valid:</h2>
-        <div>
+        <p>
           (The feed requirements can be found <a href='https://docs.speechkit.io/docs/rss-feed'>here</a>. 
           On submitting an URL you will be alerted to any elements that are missing)
-        </div>
+        </p>
         <FormPage />
       </main>
     </>

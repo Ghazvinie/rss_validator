@@ -73,7 +73,8 @@ function FormPage() {
                 </form>
                 <span className='url-error'>{urlError}</span>
             </div>
-            <table className="demo">
+            <div className='table-container'>
+            <table>
                 <thead>
                     <tr>
                         <th>Status</th>
@@ -104,6 +105,7 @@ function FormPage() {
                     })}
                 </tbody>
             </table>
+            </div>
 
         </div >
     );
