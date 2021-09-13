@@ -13,12 +13,17 @@ app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(express.json());
+// app.use(express.static(__dirname, '..client/build'));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
+
+app.get('*', (req, res) => {
+  res.sendFile(__dirname, '../client/build','index.js' );
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -33,7 +38,6 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
 });
 
 
