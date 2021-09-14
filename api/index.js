@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, '..client/build')));
 app.use('/api', apiRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build','index.js'));
+  res.sendFile(path.join(__dirname, '../client/build/src','index.js'));
 });
 
 module.exports = app;
