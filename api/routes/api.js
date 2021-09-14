@@ -3,8 +3,8 @@ const axios = require('axios');
 const parser = require('xml2json');
 
 router.get('/', (req, res) => {
-  res.json('api working')
-})
+  res.json('api working');
+});
 
 router.post('/', async (req, res) => {
   const { url } = req.body;
