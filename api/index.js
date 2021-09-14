@@ -1,5 +1,6 @@
 const express = require('express');
 const apiRouter = require('./routes/api');
+const path = require('path');
 
 const app = express();
 
@@ -12,12 +13,12 @@ app.listen(PORT, () => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(express.static(__dirname, '..client/build'));
+app.use(express.static(path.join(__dirname, '..client/build')));
 
 app.use('/api', apiRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname, '../client/build','index.js' );
+  res.sendFile(path.join(__dirname, '../client/build','index.js'));
 });
 
 module.exports = app;
