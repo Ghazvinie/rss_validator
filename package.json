@@ -19,8 +19,8 @@
     "url": "https://github.com/Ghazvinie/rss_validator/issues"
   },
   "homepage": "https://github.com/Ghazvinie/rss_validator#readme",
-  "engines" : {
-    "node" : "14.0.0"
-  }
+  "engines": {
+    "node": "14.0.0"
+  },
+  "dependencies": {}
 }
-
