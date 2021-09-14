@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/app.js",
-    "build": "cd client && npm install && npm run build"
+    "start": "node api/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +17,5 @@
   "bugs": {
     "url": "https://github.com/Ghazvinie/rss_validator/issues"
   },
-  "homepage": "https://github.com/Ghazvinie/rss_validator#readme",
-  "engines": {
-    "node": "14.0.0"
-  },
-  "dependencies": {
-    "axios": "^0.21.4",
-    "express": "~4.16.1",
-    "xml2json": "^0.12.0"
-  }
+  "homepage": "https://github.com/Ghazvinie/rss_validator#readme"
 }
