@@ -13,13 +13,12 @@ app.listen(PORT, () => {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(express.static(path.resolve(__dirname, '..client/build')));
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.use('/api', apiRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build','index.html'));
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
-
 
 module.exports = app;
