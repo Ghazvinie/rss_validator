@@ -3,12 +3,11 @@
     padding: 10px;
 }
 
-.form-container{
+.form-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 form {
     width: 100%;
     display: flex;
@@ -43,13 +42,18 @@ input {
     color: rgba(59, 59, 59, 0.900);
     min-width: 70%;
     padding: 3px;
-
+    display: flex;
+    justify-items: auto;
 }
 
 .url-error {
     color: red;
     padding: 5px;
+    text-align: start;
+    min-width: 7%;
+    font-size: medium;
 }
+
 .table-container {
     display: flex;
     align-items: center;

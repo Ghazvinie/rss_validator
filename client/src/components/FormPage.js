@@ -71,8 +71,9 @@ function FormPage() {
                         placeholder='Please input a valid url'
                     />
                     <button>{isParsing ? <ImSpinner6 className='spin-icon' /> : 'Submit'}</button>
+                    <span className='url-error'>{urlError}</span>
                 </form>
-                <span className='url-error'>{urlError}</span>
+ 
             </div>
 
             <div className='table-container'>
