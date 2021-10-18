@@ -12,6 +12,7 @@ function App() {
           On submitting an URL you will be alerted to any elements that are missing.
         </p>
         <h2>Check if your feed is valid:</h2>
+        <h4>Use this link to test... (https://feeds.bbci.co.uk/news/rss.xml)</h4>
         <FormPage />
       </main>
     </>

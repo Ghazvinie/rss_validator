@@ -17,7 +17,7 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.use('/api', apiRouter);
 
-app.get('*', (req, res) => {
+app.get('*', (req, res) => { // In development change to '../client/public'
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
