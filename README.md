@@ -18,8 +18,8 @@ App functionality:
 Built with:
 
  - JavaScript
- - ReactJs
- - NodeJs 16.1.0 / Express 4.17.1
+ - ReactJS 17.0.2
+ - NodeJs 14.18.1 / Express 4.17.1
  - HTML / CSS
 
 For development the client and server need to be started separately, using:
